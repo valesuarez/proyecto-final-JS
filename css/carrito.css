@@ -1,0 +1,99 @@
+.listaComprar{
+    width: 30%;
+    margin: 0 10%;
+    max-height: 88vh;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction:column;
+    gap: 0.5em;
+    align-items:flex-end;
+    position:absolute;
+    overflow:auto;
+    z-index:9;
+    top: 12vh;
+
+}
+.listaProductosComprar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(5, 5, 5);
+    color: rgb(252, 252, 252);
+    width: 100%;
+    
+}
+
+.titulo{
+    justify-self: start;
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgb(255, 204, 0);
+    font-family: "pokemonSolid";
+    text-shadow: 10px 10px 0px rgba(0, 99, 177, 0.8);
+    font-size: 2rem;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    padding-top: 1rem;
+    margin-bottom: 30px;
+
+}
+
+.cerrarLista{
+    cursor: pointer;
+    color: azure;
+    margin-right: 10px;
+}
+
+.listaComprar > .contenidoDelCarrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    height: 5rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    background-color: rgb(158, 158, 158);
+}
+
+.imagenProductoCarrito {
+    width: 4rem;
+    border-radius: 1rem;
+    margin-left: 10px;
+}
+.nombreProductoCarrito{
+    font-size:large;
+}
+.precioProductoCarrito{
+    font-size: large;
+    margin-right: 10px;
+}
+.totalCarrito{
+    font-size: 25px;
+    padding-bottom: 20px;
+    text-align:left;
+    margin-right: 10px;
+   
+}
+.vaciarCarrito{
+    font-size: 20px;
+    width: 100px;
+    background-color: rgb(245, 0, 0);
+    text-align: center ;
+    color: azure;
+    cursor: pointer;
+    margin: 10px;
+    border: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-style: solid rgb(112, 110, 110);}
+
+    .eliminarProd{
+        color: red;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    

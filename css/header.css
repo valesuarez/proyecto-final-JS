@@ -1,0 +1,52 @@
+
+header {
+    background-color: rgba(255, 0, 0, 0.5);
+    position: relative;
+    top: 0;
+  }
+  header nav {
+    display: inline-flex;
+  }
+  header nav .logo {
+    width: 200px;
+    height: 100px;
+  }
+  header nav .heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+  header nav .menu {
+    color: black;
+    list-style: none;
+    letter-spacing: 1px;
+  }
+  header nav .menu li {
+    font-family: "pokemonSolid";
+    list-style-type: none;
+    display: inline-flex;
+    margin-left: 20px;
+    transition: 500ms ease;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  header nav .menu li a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+  }
+  header nav .menu li a:hover {
+    filter: blur(0);
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #fef900, #ff5e00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  header nav .menu li a .aca {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .aca {
+    font-size: 25px;
+  }
+  

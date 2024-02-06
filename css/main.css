@@ -1,0 +1,470 @@
+@import url(../css/banner.css);
+@import url(../css/carrito.css);
+@import url(../css/productos.css);
+@import url(../css/market.css);
+@import url(../css/header.css);
+@import url(../css/index.css);
+@import url(../css/personajes.css);
+@import url(../css/pokedex.css);
+
+@font-face {
+  font-family: "pokemonHollow";
+  src: url(../fuente/pokmon/PokemonHollow.ttf);
+}
+@font-face {
+  font-family: "pokemonSolid";
+  src: url(../fuente/pokmon/PokemonSolid.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle, rgb(255, 175, 0) 0%, rgb(255, 0, 0) 27%, rgb(2, 0, 36) 69%);
+}
+
+/* header {
+  background-color: rgba(255, 0, 0, 0.5);
+  position: relative;
+  top: 0;
+}
+header nav {
+  display: inline-flex;
+}
+header nav .logo {
+  width: 200px;
+  height: 100px;
+}
+header nav .heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+header nav .menu {
+  color: black;
+  list-style: none;
+  letter-spacing: 1px;
+}
+header nav .menu li {
+  font-family: "pokemonSolid";
+  list-style-type: none;
+  display: inline-flex;
+  margin-left: 20px;
+  transition: 500ms ease;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+header nav .menu li a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+header nav .menu li a:hover {
+  filter: blur(0);
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #fef900, #ff5e00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header nav .menu li a .aca {
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+} */
+
+h1 {
+  color: rgb(255, 204, 0);
+  font-family: "pokemonSolid";
+  text-shadow: 10px 10px 0px rgba(0, 99, 177, 0.8);
+  font-size: 4rem;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  padding-top: 1rem;
+  margin-bottom: 30px;
+}
+
+
+
+.container .imagen img {
+  width: 500px;
+  margin-top: 20px;
+}
+.container .videos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .videos div {
+  padding: 50px;
+}
+.container .videos .titulos {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+.container .videos iframe {
+  width: 400px;
+  height: 250px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+.formulario form {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  border: solid black;
+  width: 500px;
+}
+.formulario form label, .formulario form input, .formulario form textarea {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  text-align: center;
+  margin: 8px;
+}
+.formulario form input {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.formulario form textarea {
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.formulario form .enviar {
+  color: aliceblue;
+  background-color: black;
+}
+
+.container-img {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
+}
+.container-img .box-img figure {
+  width: 100%;
+  height: 100%;
+}
+.container-img .box-img figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-img .box-img figure img:hover {
+  transform: scale(1.1);
+}
+.container-img .box-img:nth-child(1) {
+  grid-row-start: span 2;
+  grid-column-start: span 2;
+}
+.container-img .box-img:nth-child(4) {
+  grid-row-start: span 2;
+}
+
+footer {
+  margin-top: 2rem;
+  border-top: solid red;
+  display: flex;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+footer li {
+  margin-top: 10px;
+  list-style-type: none;
+}
+footer li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+}
+footer li a:hover {
+  color: #fef900;
+}
+footer .SocRedes {
+  margin-left: 720px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 3rem;
+  margin-top: 4rem;
+  border-radius: 10px;
+}
+footer .SocRedes a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+footer .SocRedes .bi-facebook:hover {
+  color: #00d9ff;
+}
+footer .SocRedes .bi-tiktok:hover {
+  color: #16fd01;
+}
+footer .SocRedes .bi-instagram:hover {
+  color: #db0cc3;
+}
+footer .SocRedes .bi-youtube:hover {
+  color: #ff0808;
+}
+footer .SocRedes .bi-twitter-x:hover {
+  color: #b700ff;
+}
+footer .SocRedes .bi {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 680px) {
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .container-img {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 200px;
+  }
+  .container-img .box-img:nth-child(1) {
+    grid-column-start: span 1;
+  }
+}
+@media (max-width: 500px) {
+  .container-img {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-img .box-img {
+    height: 200px;
+  }
+}
+@media (max-width: 850px) {
+  .formulario {
+    padding: 2rem;
+  }
+  .formulario form {
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .formulario {
+    padding: 2rem;
+  }
+  .formulario form {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .lista-personajes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .lista-personajes .tarjeta-personajes {
+    height: 300px;
+    width: 250px;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 680px) and (max-width: 850px) {
+  .lista-personajes {
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media only screen and (max-width: 1920px) and (min-width: 850px) {
+  .lista-personajes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .container .imagen img {
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin-top: 20px;
+  }
+  .container .videos {
+    grid-template-columns: 1fr;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .videos iframe {
+    height: 250px;
+    width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .container .lista-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 850px) {
+  .container .lista-pokemon {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 680px) {
+  footer li a {
+    font-size: 15px;
+  }
+  footer .SocRedes {
+    margin-top: 5px;
+    margin-left: 200px;
+    flex-direction: column;
+    display: flex;
+  }
+  footer .SocRedes .icono1:hover {
+    color: #0051ff;
+  }
+  footer .SocRedes .icono2:hover {
+    color: #16fd01;
+  }
+  footer .SocRedes .icono3:hover {
+    color: #db0cc3;
+  }
+  footer .SocRedes .icono4:hover {
+    color: #ff0808;
+  }
+  footer .SocRedes .icono5:hover {
+    color: #f9f9f9;
+  }
+  footer .SocRedes img {
+    width: 35px;
+  }
+  footer .SocRedes .fa {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 0 0 30px 0px;
+    transition: 0.5s;
+  }
+}
+@keyframes slit-in-vertical {
+  0% {
+    transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(0) rotateY(0);
+  }
+}
+/* ----------------------------------------------
+* Generated by Animista on 2023-10-23 13:5:41
+* Licensed under FreeBSD License.
+* See http://animista.net/license for more info. 
+* w: http://animista.net, t: @cssanimista
+* ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+.productosMarket {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.productosMarket .tarjetasProd {
+  width: 350px;
+  height: 460px;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  border: solid rgb(255, 251, 251);
+  border-color: rgb(255, 255, 255);
+  color: azure;
+}
+.productosMarket .tarjetasProd .imagenProducto {
+  width: 250px;
+  height: 300px;
+}
+.productosMarket .tarjetasProd .precioProducto {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+}
+.productosMarket .tarjetasProd .idProducto {
+  display: none;
+}
+.productosMarket .tarjetasProd .nombreProducto {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  width: 350px;
+  color: azure;
+}/*# sourceMappingURL=main.css.map */

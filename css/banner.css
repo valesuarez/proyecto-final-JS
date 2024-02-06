@@ -1,0 +1,40 @@
+.banner{
+    background-size:contain;
+    background-position: center;
+    height: 75vh;
+    background-image:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3a650fd1-eca0-4a27-8204-ef3ea54b80d2/daf1mc0-549c018b-b7ba-46de-bcc3-bfe0b527a935.png/v1/fit/w_828,h_276/pokemon_types_icons_banner_by_mjc_silver_daf1mc0-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTAwIiwicGF0aCI6IlwvZlwvM2E2NTBmZDEtZWNhMC00YTI3LTgyMDQtZWYzZWE1NGI4MGQyXC9kYWYxbWMwLTU0OWMwMThiLWI3YmEtNDZkZS1iY2MzLWJmZTBiNTI3YTkzNS5wbmciLCJ3aWR0aCI6Ijw9MTUwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.zPL7cgg-8qz9BUM46q48Q2bR0aolbeLWYrYuzjmquL0");
+    background-repeat:no-repeat;
+}
+.contenedorBanner{
+    text-align: center;
+    padding: 5% 0;    
+}
+.contenedorBanner h1{
+    margin: 0;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(255, 204, 0);
+  font-family: "pokemonSolid";
+  text-shadow: 10px 10px 0px rgba(0, 99, 177, 0.8);
+  font-size: 4rem;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  padding-top: 1rem;
+  margin-bottom: 30px;
+
+}
+.contenedorBanner h2{
+    font-size: 75px;
+    color: rgb(255, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    padding-top: 1rem;
+    margin-bottom: 30px;
+  
+
+}
